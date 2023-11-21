@@ -13,7 +13,7 @@ inicio
    emp := 0
    der :=0
    repita // inicia o loop de jogadas
-      maquina := randi(3) // numeros de 0 ate 2 aleatÛrios / sendo 0 pedra, 1 papel e 3 tesoura.
+      maquina := randi(3) // numeros de 0 ate 2 aleat√≥rios / sendo 0 pedra, 1 papel e 3 tesoura.
       escreval("=-=-=-=-=-=-=-=-=-=-=-=")
       escreval(" PEDRA PAPEL E TESOURA ")
       escreval("=-=-=-=-=-=-=-=-=-=-=-=")
@@ -25,48 +25,48 @@ inicio
       escreval("-----------------------")
       escolha mao
       caso 1
-         escreval(" VOC  ESCOLHEU PEDRA ")
+         escreval(" VOC√ä ESCOLHEU PEDRA ")
          se (maquina = 0) entao
-            escreval(" M¡QUINA ESCOLHEU PEDRA ")
+            escreval(" M√ÅQUINA ESCOLHEU PEDRA ")
             escreval("-----------------------")
             escreval(" RESULTADO: EMPATE ")
             escreval("-----------------------")
             emp <- emp + 1
          senao
             se (maquina = 1) entao
-               escreval(" M¡QUINA ESCOLHEU PAPEL ")
+               escreval(" M√ÅQUINA ESCOLHEU PAPEL ")
                escreval("-----------------------")
                escreval(" RESULTADO: DERROTA ")
                escreval("-----------------------")
                der := der + 1
             senao
                se (maquina = 2) entao
-                  escreval(" M¡QUINA ESCOLHEU TESOURA ")
+                  escreval(" M√ÅQUINA ESCOLHEU TESOURA ")
                   escreval("-----------------------")
-                  escreval(" RESULTADO: VIT”RIA! ")
+                  escreval(" RESULTADO: VIT√ìRIA! ")
                   escreval("-----------------------")
                   vit := vit + 1
                fimse
             fimse
          fimse
       caso 2
-         escreval(" VOC  ESCOLHEU PAPEL ")
+         escreval(" VOC√ä ESCOLHEU PAPEL ")
          se (maquina = 0) entao
-            escreval(" M¡QUINA ESCOLHEU PEDRA ")
+            escreval(" M√ÅQUINA ESCOLHEU PEDRA ")
             escreval("-----------------------")
-            escreval(" RESULTADO: VIT”RIA! ")
+            escreval(" RESULTADO: VIT√ìRIA! ")
             escreval("-----------------------")
             vit := vit + 1
          senao
             se (maquina = 1) entao
-               escreval(" M¡QUINA ESCOLHEU PAPEL ")
+               escreval(" M√ÅQUINA ESCOLHEU PAPEL ")
                escreval("-----------------------")
                escreval(" RESULTADO: EMPATE ")
                escreval("-----------------------")
                emp <- emp + 1
             senao
                se (maquina = 2) entao
-                  escreval(" A M¡QUINA ESCOLHEU TESOURA ")
+                  escreval(" A M√ÅQUINA ESCOLHEU TESOURA ")
                   escreval("-----------------------")
                   escreval(" RESULTADO: DERROTA ")
                   escreval("-----------------------")
@@ -76,23 +76,23 @@ inicio
          fimse
 
       caso 3
-         escreval(" VOC  ESCOLHEU TESOURA ")
+         escreval(" VOC√ä ESCOLHEU TESOURA ")
          se (maquina = 0) entao
-            escreval(" M¡QUINA ESCOLHEU PEDRA ")
+            escreval(" M√ÅQUINA ESCOLHEU PEDRA ")
             escreval("-----------------------")
             escreval(" RESULTADO: DERROTA ")
             escreval("-----------------------")
             der := der + 1
          senao
             se (maquina = 1) entao
-               escreval(" M¡QUINA ESCOLHEU PAPEL ")
+               escreval(" M√ÅQUINA ESCOLHEU PAPEL ")
                escreval("-----------------------")
-               escreval(" RESULTADO: VIT”RIA! ")
+               escreval(" RESULTADO: VIT√ìRIA! ")
                escreval("-----------------------")
                vit := vit + 1
             senao
                se (maquina = 2) entao
-                  escreval(" M¡QUINA ESCOLHEU TESOURA ")
+                  escreval(" M√ÅQUINA ESCOLHEU TESOURA ")
                   escreval("-----------------------")
                   escreval(" RESULTADO: EMPATE ")
                   escreval("-----------------------")
@@ -106,13 +106,13 @@ inicio
       limpatela // limpa o console
    ate (cont = "N") ou (cont = "n") // terminar o loop independente do CAPS na letra "N"
    tot <- vit + emp + der // calcula o total de jogos usando as estatisticas geradas a cada rodada
-   apr := (((vit * 3) + emp) / (tot * 3))*100 // calcula o aproveitamento como no futebol. onde VIT”RIA = 3, EMPATE = 1, DERROTA = 0.
+   apr := (((vit * 3) + emp) / (tot * 3))*100 // calcula o aproveitamento como no futebol. onde VIT√ìRIA = 3, EMPATE = 1, DERROTA = 0.
 
    escreval("=-=-=-=-=-=-=-=-=-=-=-=")
    escreval(" PEDRA PAPEL E TESOURA ")
    escreval("=-=-=-=-=-=-=-=-=-=-=-=")
    escreval(" Voc√™ jogou",tot," vezes")
-   escreval(" Total de vitÛrias:", vit)
+   escreval(" Total de vit√≥rias:", vit)
    escreval(" Total de empates:", emp)
    escreval(" Total de derrotas:", der)
    escreval(" Aproveitamento: ",apr:2:0,"%")
