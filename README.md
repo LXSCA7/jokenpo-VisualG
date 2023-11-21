@@ -1,4 +1,4 @@
-#Projeto: Jogo Pedra-Papel-Tesoura
+# Projeto: Jogo Pedra-Papel-Tesoura
 
 Projeto em VisualG para meus estudos de Algoritmos.
 
